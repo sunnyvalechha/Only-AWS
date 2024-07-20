@@ -201,6 +201,54 @@ At the time when launching the Instance select the option Hibernate, check uptim
 ![image](https://github.com/user-attachments/assets/1b25df3d-d710-4b8d-8312-ff313e2333fd)
 
 
+**How to copy Instance and its data from one AZ to another ?**
 
+* EBS Volume Snapshot - Important !
+      - EBS Volumes > Actions > Create Snapshot
+      - Snapshot > Actions > Copy Snapshot (this can copy in same region or in another region)
+      - Snapshots > Recycle bin > Retention policy (called as Accidental deletion protect)
+      - Select resource type (EBS Snapshot)> retention 1 day > Create # So if snapshot is delete we can recover again
+
+  ![image](https://github.com/user-attachments/assets/c0c79f89-c05f-4b1c-b090-12b8f53ebe77)
+
+
+* Create AMI from an running Instance.
+      - Instance > Actions (Image & Templates) > Create Image
+      - AMI > Launch Instance from AMI
+
+**EBS Multi Attach**
+
+* Attach the same ec2 instance with multiple ec2 instances.
+* Each instance have full read write access to the EBS volume.
+* Attach upto 16 instance at a time.
+* Must use a file-system that cluster aware (not ext3,4 xfs)
+
+**EBS Encryption** 
+
+*  When we create a encrypted EBS volume all data transfer inside the volume already encrypted. AMI and snapshot also encrypted.
+*  Encryption and decryption are handled by AWS
+*  EBS encryption leverage keys from KMS (AES 256)
+
+Note: A volume created without encryption so if we make snapshot of this EBS volume this also uncrypted.
+
+How to fix ?
+
+Go to Snapshot > Copy snapshot > Select encryption > 
+
+
+![image](https://github.com/user-attachments/assets/f2ddbf7b-82e5-411e-9cd2-4e840f72ade3)
+
+
+
+
+**EC2 Instance Store**
+
+These are more high performance from EBS volume then use EC2 instance store.
+
+Features:
+
+* Better I/O performance
+* EC2 Instance store lose their storage if they're stopped.
+* Good for Cache and Temporary content.
 
 
