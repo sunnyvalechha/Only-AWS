@@ -233,13 +233,11 @@ Note: A volume created without encryption so if we make snapshot of this EBS vol
 
 How to fix ?
 
-Go to Snapshot > Copy snapshot > Select encryption > 
+Go to Snapshot > Copy snapshot > Select encryption > Create
 
+Once this is created, Create volume from Snapshot
 
 ![image](https://github.com/user-attachments/assets/f2ddbf7b-82e5-411e-9cd2-4e840f72ade3)
-
-
-
 
 **EC2 Instance Store**
 
