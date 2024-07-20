@@ -118,3 +118,56 @@ m5.2xLarge
 * Dedicated Instances - no other customer will share your hardware
 
 * Capacity Reservation - reserve capacity in a specific AZ for any duration.
+
+**Spot Instances**
+
+* Get on 90% discount in compared with On demand.
+
+Spot Request:
+
+1. Define how many Instances we want.
+2. Maximu price
+3. Launch specification
+4. AMI
+5. Request valid from and till when.
+6. Request type:
+
+There are two types of request:
+
+* One time request for spot Instances - As soon as the requst is full filled the instance launched the spot request will go away.
+* Persistent request - If the Instance get interupt the request will again initiated automatically and fullfil, If the Instance are not in use we have to terminate the instance because it will not done automatic and delete the spot request first then delete instance else it will again some instance as per the request.
+
+**Spot Fleet**
+
+* Set of Spot Instance + On-demand Instances
+* The spot fleet will try to meet the target capacity with price constraints.
+
+![image](https://github.com/user-attachments/assets/f070064a-3c93-46a3-85be-efd862bb4d67)
+
+
+**Placement Groups**
+
+* Control over the EC2 instance placement strategy
+* When creating a placement group we have to define a strategy
+
+1. Cluster - Cluster Instances into a low-latency group in a single AZ
+2. Spread - Spread instances into a underlying hardware (max 7 instances per group per AZ)
+3. Partition - Spread instances accross many different partitions which rely on different set of racks with an AZ. Can scales 100's of Ec2 instances. (Use case Hadoop)
+
+
+
+Cluster
+
+![image](https://github.com/user-attachments/assets/0352778c-b821-49fb-b3f1-b223a70786d0)
+
+
+Spread
+
+![image](https://github.com/user-attachments/assets/faee179d-ec2c-434d-8fcf-62e725d8d190)
+
+
+Partition
+
+![image](https://github.com/user-attachments/assets/b0d350d5-2534-4dce-ba99-2bbbff67f42e)
+
+
