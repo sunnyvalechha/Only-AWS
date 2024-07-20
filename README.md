@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/73e78ef8-855a-430f-8cf0-eaf4e8a278b0)Regions and Availability zones map: https://aws.amazon.com/about-aws/global-infrastructure/
+Regions and Availability zones map: https://aws.amazon.com/about-aws/global-infrastructure/
 
 # IAM 
 
@@ -57,6 +57,8 @@ Iam section > Inside specific user > Access Report
 * Ec2 User data runs with root privilege so we must use sudo when using any command.
 
 **EC2 Instance Types**:
+
+![image](https://github.com/user-attachments/assets/73e78ef8-855a-430f-8cf0-eaf4e8a278b0)
 
 ![image](https://github.com/user-attachments/assets/7e8e751b-b109-41a0-a649-655ee3bbb4f2)
 
