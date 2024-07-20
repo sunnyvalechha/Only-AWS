@@ -171,3 +171,36 @@ Partition
 ![image](https://github.com/user-attachments/assets/b0d350d5-2534-4dce-ba99-2bbbff67f42e)
 
 
+ENI - Elastic Network Interface
+
+A virtual Network Card like **eth0** is the default we are adding **eth1**
+
+We can create a ENI and attach to EC2 instances on the fly. 
+
+It will bound to a specific AZ
+
+
+**EC2 Hibernate**
+
+When we stop the instance it will shut down the OS completely and then start if we start again it will take more time. This is not for empty instance. Imagine one heavy script is running in User data along with the web application.
+
+In Hibernate the instance will not stop or restarted it will just frozen so the boot will be much faster. Under the hood the RAM state is written in a file in the root EBS volume. Just instance RAM size should be less than 150 GB
+
+Use Cases:
+
+* Long running processes.
+* Store the RAM state
+* Service that take time to start again.
+
+![image](https://github.com/user-attachments/assets/652774fe-712e-4eb0-b28f-5599c81279b2)
+
+Practical:
+
+At the time when launching the Instance select the option Hibernate, check uptime of the instance when launched, Stop & Start the Instance again then check uptime it will be more min not less because if the instance had fully stopped so uptime will be 0
+
+![image](https://github.com/user-attachments/assets/1b25df3d-d710-4b8d-8312-ff313e2333fd)
+
+
+
+
+
