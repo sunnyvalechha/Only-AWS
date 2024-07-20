@@ -58,8 +58,6 @@ Iam section > Inside specific user > Access Report
 
 **EC2 Instance Types**:
 
-![image](https://github.com/user-attachments/assets/73e78ef8-855a-430f-8cf0-eaf4e8a278b0)
-
 ![image](https://github.com/user-attachments/assets/7e8e751b-b109-41a0-a649-655ee3bbb4f2)
 
 7 Different type of Ec2 Instances, each Instance type have different families.
