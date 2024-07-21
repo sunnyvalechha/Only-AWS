@@ -320,4 +320,16 @@ Storage Classes:
 6. Glacier Deep Archive
 7. Intelligent Tiering
 
- 
+ # AWS Config
+
+ AWS Config provides a detailed view of the configuration of AWS resources in your AWS account. It deals with compliance it make sure that the Aws account and resources alligns with the rules and regulations of the organization.
+
+ Example:
+ * EC2 instance should have monitoring enabled.
+ * S3 buckets have Lifecycle policy enabled and block the public access.
+
+But there must be thousand of buckets and EC2 instances how to check if it's according to compliance or not.
+
+
+  
+
