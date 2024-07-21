@@ -331,5 +331,14 @@ Storage Classes:
 But there must be thousand of buckets and EC2 instances how to check if it's according to compliance or not.
 
 
+# AWS Secret Management
+
+We can secure our environment by three ways:-
+
+1. Systems manager
+2. Secret manager
+3. Hashicorp vault
+
+
   
 
