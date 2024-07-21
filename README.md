@@ -249,4 +249,53 @@ Features:
 * EC2 Instance store lose their storage if they're stopped.
 * Good for Cache and Temporary content.
 
+# RDS 
+
+Relational Databases - A managed service from AWS. AWS provide many features along with database.
+
+* Automated provisioning, OS Patching.
+* Continues backups and restore to specific timestamp **(Point in Time Restore)**
+* Monitoring Dashboards
+* Read replicas for Improved Read performance.
+* Multi AZ setup for Disaster Recovery (DR)
+* Scaling Capabilities (Vertical & Horizontal)
+
+**Read replicas for read scalability**
+
+* Read replicas helps us to scale our reads on database.
+* Suppose 1 application is read and write to the database and 1 database is not enough because there are too many read / write.
+* So we can increase 15 Read replicas, within AZ, Cross AZ or cross region.
+* So Read replicas have sync with main RDS database engine
+
+Use Case:
+
+![image](https://github.com/user-attachments/assets/b3f4cbb4-f416-49d5-984b-8212d9ed47cb)
+
+**RDS - Mutli AZ Disaster Recovery**
+
+* 1 Application which is continuesly read & write to the Main databases.
+* SYNC replication.
+* 1 DNS name is assigned to the RDS Instance (Standby) for automatic failover condition.
+* If there is failure of main RDS DB it will automatic make the Standy DB to main DB with the help of DNS.
+* No intervention is required.
+
+![image](https://github.com/user-attachments/assets/f4ff38ee-77ec-4512-96bb-5834a8db8582)
+
+
+**RDS - From Single AZ to multi AZ**
+
+* Zero downtime operation ( no need to stop the AZ )
+* Just click on 'modify' the database and enable multi AZ
+
+Under the hood what happened, when we do this ?
+
+* A snapshot will taken of your main database.
+* Snapshot db will restore to new Standby database.
+* Once the DB is restore, Syncronization have estabilished. Now we are in multi AZ setup
+
+![image](https://github.com/user-attachments/assets/ee8cf487-40de-4c8d-9a24-be92a35443e2)
+
+Important: Once the RDS is created connect with "SQL Electron"
+
+![Uploading image.png…]()
 
