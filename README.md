@@ -308,4 +308,16 @@ Go to RDS > Automated Backups > Replicated > Restore to point in time > Choose r
 ![image](https://github.com/user-attachments/assets/541b3305-f0dd-4202-9863-7b7d06dfbbec)
 
 
+# S3 
 
+Storage Classes:
+
+1. Standard - General Purpose
+2. Standard - Infrequent Access
+3. One Zone - Infrequent Access
+4. Glacier Instant Retrieval
+5. Glacier Flexible Retrieval
+6. Glacier Deep Archive
+7. Intelligent Tiering
+
+ 
