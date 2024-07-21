@@ -339,6 +339,14 @@ We can secure our environment by three ways:-
 2. Secret manager
 3. Hashicorp vault
 
+Systems manager: Information which is not sensitve can be stored.
+
+Secret manager: Information which is highly sensitive can stored either secret manager or vault.
+
+We can integrate the combination both system and secret manager to use our sensitive and non-sensitive data.
+
+
+
 
   
 
