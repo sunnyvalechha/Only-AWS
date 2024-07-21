@@ -295,8 +295,17 @@ Under the hood what happened, when we do this ?
 
 ![image](https://github.com/user-attachments/assets/ee8cf487-40de-4c8d-9a24-be92a35443e2)
 
-Important: Once the RDS is created connect with "SQL Electron"
+Important: Once the RDS is created connect with "SQL Electron" 
+
+Provide Endpoint, DB and Password to the SQL Electron and connect.
 
 ![image](https://github.com/user-attachments/assets/3fccb3ad-893c-4386-ae6b-6ffe781c90a8)
+
+Point in Time Recovery - Restore last backup or any specific custom time backup.
+
+Go to RDS > Automated Backups > Replicated > Restore to point in time > Choose restore time (custom / latest) 
+
+![image](https://github.com/user-attachments/assets/541b3305-f0dd-4202-9863-7b7d06dfbbec)
+
 
 
