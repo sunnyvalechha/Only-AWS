@@ -297,5 +297,6 @@ Under the hood what happened, when we do this ?
 
 Important: Once the RDS is created connect with "SQL Electron"
 
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/3fccb3ad-893c-4386-ae6b-6ffe781c90a8)
+
 
