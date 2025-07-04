@@ -249,6 +249,35 @@ Features:
 * EC2 Instance store lose their storage if they're stopped.
 * Good for Cache and Temporary content.
 
+**AWS Load Balancers**
+
+In AWS there are 3 types of Load Balancers:
+1. Application LB
+2. Network LB
+3. Gateway LB
+4. Classic LB (old generation)
+
+What is Load Balancer?
+- Suppose, I have a application it could be any shopping website or a online game and it is hosted on ec2 server, on its initial phase the application was not much popular so the traffic coming to the ec2 is manageble but gradually people found it intresting or theere might a sale going on the huge traffic comes to the server and 1 server is not able to handle the traffic.
+- Eventually users might face the slowness and downtime while accessing the app.
+- So deploy the application in 3 different vm's and in front of these 3 instances you will place a load balancer.
+- We have route the traffic instead to the instances to the Load balancer. Now, the Load balancer will manage the request and traffic comming to the instances.
+- A basic Load balancer will distribute the traffic in a round robin manner, let's say there are 100 request coming and 3 instances are deployed so each instance will get 33 requests.
+- A load balancer can distribute traffic in a ration based like 50 request sends on 1 instance rest 2 instances get 25-25. This also can be done with other LB's.
+- Doing this we made this application an **Highly available** (HA) application.
+
+There are lots of Load balancers are present in the market, few are listed below:
+1. Nginx
+2. F5
+3. Envoy
+4. Traefik
+5. Ambassador
+
+How packet flows within 7 layers of OSI model?
+
+
+
+
 # RDS 
 
 Relational Databases - A managed service from AWS. AWS provide many features along with database.
