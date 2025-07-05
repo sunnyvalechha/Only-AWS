@@ -274,7 +274,15 @@ There are lots of Load balancers are present in the market, few are listed below
 5. Ambassador
 
 How packet flows within 7 layers of OSI model?
-- 
+- 7 Layers are:
+
+1. Application layer          - layer7
+2. Presentation layer         - layer6
+3. Session layer              - layer5
+4. Data-segmentation layer    - layer4  # transport layer
+5. Network layer              - layer3
+6. Data link layer            - layer2
+7. Physical layer             - layer1
 
 
 
