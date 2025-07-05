@@ -273,8 +273,7 @@ There are lots of Load balancers are present in the market, few are listed below
 4. Traefik
 5. Ambassador
 
-How packet flows within 7 layers of OSI model?
-- 7 Layers are:
+First, understand how data packets flows within 7 layers of OSI model?
 
 1. Application layer          - layer7
 2. Presentation layer         - layer6
@@ -284,7 +283,9 @@ How packet flows within 7 layers of OSI model?
 6. Data link layer            - layer2
 7. Physical layer             - layer1
 
+* Osi model is a journey of a data, how we request for some information on the internet and the information we receive back in fraction of seconds is gone through this journey.
 
+*  
 
 
 # RDS 
