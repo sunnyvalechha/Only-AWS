@@ -289,7 +289,20 @@ First, understand how data packets flows within 7 layers of OSI model?
 * If we want to perform traffic load balancing on layer 4, then choose the Network Load Balancer (Network Layer).
 
 
-# RDS 
+# RDS
+
+* Overview of RDS
+* Databases on EC2 instances
+* Migrating traditional DB from EC2 to RDS
+* HA - Multi AZ architecture
+* RDS - Automatic backups, snapshot & restore
+* RDS - read replicas
+* RDS - data security
+
+* DB's on EC2 vs DB's on RDS we place webserver & application on 1 ec2 and database on another db
+
+<img width="1894" height="738" alt="image" src="https://github.com/user-attachments/assets/26ea3188-1fbb-4e49-87f5-d9dc875f59a6" />
+
 
 Relational Databases - A managed service from AWS. AWS provide many features along with database.
 
