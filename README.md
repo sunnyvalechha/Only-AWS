@@ -396,6 +396,11 @@ We can secure our environment by three ways:-
 * Secret manager: Information which is highly sensitive can stored either secret manager or vault. This feature can rotate certificates and passwords once in a 90 or 120 days we set.
 * We can integrate the combination both system manager and secret manager to use our sensitive and non-sensitive data due to the cost also because Aws will charge to make you data safe.
 
+# 3 tier architecture
+
+* 3 tier is where frontend + backend + database is required.
+* 2 tier is where only frontend and backend is required no database.
+
 
 
 
