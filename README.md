@@ -1,3 +1,18 @@
+# Cloud cost optimization
+
+* Cloud cost optimization is the process of strategically managing and reducing cloud computing expenses while maintaining or improving performance and functionality. It involves analyzing cloud resource usage, identifying inefficiencies, and implementing strategies to minimize waste and maximize the value derived from cloud investments.
+
+* Write a Lambda function in Python using boto3 module and this function will talk to the Aws API's.
+* We have to write the function for a individual resource like EBS volume this function will also delete the stale resources.
+* Trigger this lambda function with the help of cloudwatch.
+* In Lambda function default execution time is 3 seconds we can increase as per the requirement. Aws will charge us for this execution time.
+* 
+
+
+
+
+=========================================
+
 Regions and Availability zones map: https://aws.amazon.com/about-aws/global-infrastructure/
 
 # IAM 
