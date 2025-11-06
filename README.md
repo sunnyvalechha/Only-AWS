@@ -391,7 +391,7 @@ Go to RDS > Automated Backups > Replicated > Restore to point in time > Choose r
 
 * The object is now accessible
 
-Storage Classes:
+* 7 Storage Classes:
 
 1. Standard - General Purpose
 2. Standard - Infrequent Access
@@ -400,6 +400,15 @@ Storage Classes:
 5. Glacier Flexible Retrieval
 6. Glacier Deep Archive
 7. Intelligent Tiering
+
+* S3 Durability and Availability
+
+- Durability - 99.99999999999% (11 times 9) of object accross multiple Az's.
+- Same durability for all storage classes.
+
+- Availability - Measure how ready a service is. It depends on storage class.
+- Example: S3 standard has 99.99% of availability = not available 53 minutes in a year.
+- 
 
 
 # S3 Static website hosting
