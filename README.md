@@ -427,6 +427,14 @@ Storage Classes:
 
 But there must be thousand of buckets and EC2 instances how to check if it's according to compliance or not.
 
+# S3 Versioning
+
+* Bucket Permissions > Bucket Versioning
+* Enable Versioning
+* Make some changes in 'index.html' and re-upload file.
+* In Bucket you'll see toggle of 'show versions' enable it and see the old and new version.
+* 
+
 
 # AWS Secret Management
 
