@@ -417,6 +417,19 @@ Storage Classes:
 * Upload index.html file in bucket
 * Open with Bucket website endpoint under Static website hosting - http://sunnydevopsbucket.s3-website.ap-south-1.amazonaws.com
 
+# S3 Versioning
+
+* Bucket Permissions > Bucket Versioning
+* Enable Versioning
+* Make some changes in 'index.html' and re-upload file.
+* In Bucket you'll see toggle of 'show versions' enable it and see the old and new version.
+* New uploads have the "Version ID", "Null" means older version
+* Validate the content with the 'Static website hosting' URL
+* Rollback - delete the version having "Version ID", again validate.
+* Delete marker on objects - Disable toggle of show versions and delete any object
+* After deleting, enable the toggle and you'll see the deleted version.
+* 
+
  # AWS Config
 
  AWS Config provides a detailed view of the configuration of AWS resources in your AWS account. It deals with compliance it make sure that the Aws account and resources alligns with the rules and regulations of the organization.
@@ -426,15 +439,6 @@ Storage Classes:
  * S3 buckets have Lifecycle policy enabled and block the public access.
 
 But there must be thousand of buckets and EC2 instances how to check if it's according to compliance or not.
-
-# S3 Versioning
-
-* Bucket Permissions > Bucket Versioning
-* Enable Versioning
-* Make some changes in 'index.html' and re-upload file.
-* In Bucket you'll see toggle of 'show versions' enable it and see the old and new version.
-* 
-
 
 # AWS Secret Management
 
