@@ -428,7 +428,16 @@ Storage Classes:
 * Rollback - delete the version having "Version ID", again validate.
 * Delete marker on objects - Disable toggle of show versions and delete any object
 * After deleting, enable the toggle and you'll see the deleted version.
-* 
+* Restore the deleted version - delete the "delete marker" version.
+
+# S3 Replication
+
+* CRR - Cross region replication, 2 regions are different
+* SRR - Same region replication, 2 regions are the same.
+
+- Versioning must enabled in source and destination buckets.
+- Must have proper IAM permissions to S3 buckets.
+- 
 
  # AWS Config
 
