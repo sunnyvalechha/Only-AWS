@@ -405,6 +405,18 @@ Storage Classes:
 6. Glacier Deep Archive
 7. Intelligent Tiering
 
+
+# S3 Static website hosting
+
+ - S3 can also host static websites and have them accessible on the internet.
+ - It will work only if the bucket policy allows public access else it will throw "403 Forbidden error"
+
+* Under Bucket > Properties tab
+* At the end "Static website hosting"
+* Enable
+* Upload index.html file in bucket
+* Open with Bucket website endpoint under Static website hosting - http://sunnydevopsbucket.s3-website.ap-south-1.amazonaws.com
+
  # AWS Config
 
  AWS Config provides a detailed view of the configuration of AWS resources in your AWS account. It deals with compliance it make sure that the Aws account and resources alligns with the rules and regulations of the organization.
