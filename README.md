@@ -376,7 +376,24 @@ Go to RDS > Automated Backups > Replicated > Restore to point in time > Choose r
 ![image](https://github.com/user-attachments/assets/541b3305-f0dd-4202-9863-7b7d06dfbbec)
 
 
-# S3 
+# S3
+
+- Simple Storage Service
+
+* Create Bucket
+* Upload any object in the bucket        (We can't access the object with public URL / Object URL)
+* Go to bucket permissions               [Block public access (bucket settings)]
+* Edit and Untick all blocks             (Still not accessible)
+* Bucket Policy > Edit > Copy Bucket ARN > Policy Generator
+   - Type of policy - S3 bucket policy
+   - Effect - Allow
+   - Principal - *
+   - Actions - GetObject
+   - ARN - arn:aws:s3:::sunnydevopsbucket/*    # paste arn along /*
+   - Add statement / Generate policy
+   - Copy policy | paste in the bucket policy | Save changes
+
+* The object is now accessible
 
 Storage Classes:
 
