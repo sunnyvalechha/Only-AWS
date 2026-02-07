@@ -302,20 +302,21 @@ First, understand how data packets flows within 7 layers of OSI model?
 
 # RDS
 
-* Overview of RDS
-* Databases on EC2 instances
-* Migrating traditional DB from EC2 to RDS
-* HA - Multi AZ architecture
-* RDS - Automatic backups, snapshot & restore
-* RDS - read replicas
-* RDS - data security
+1. Overview of RDS
+2. Databases on EC2 instances
+3. Migrating traditional DB from EC2 to RDS
+4. HA - Multi AZ architecture
+5. RDS - Automatic backups, snapshot & restore
+6. RDS - read replicas
+7. RDS - data security
 
-* DB's on EC2 vs DB's on RDS we place webserver & application on 1 ec2 and database on another db
+* Database on EC2 vs Database on RDS we place webserver & application on 1 ec2 and database on another db
+
 
 <img width="1894" height="738" alt="image" src="https://github.com/user-attachments/assets/26ea3188-1fbb-4e49-87f5-d9dc875f59a6" />
 
 
-Relational Databases - A managed service from AWS. AWS provide many features along with database.
+**Relational Databases** - A managed service from AWS. AWS provide many features along with database.
 
 * Automated provisioning, OS Patching.
 * Continues backups and restore to specific timestamp **(Point in Time Restore)**
@@ -329,7 +330,7 @@ Relational Databases - A managed service from AWS. AWS provide many features alo
 * Read replicas helps us to scale our reads on database.
 * Suppose 1 application is read and write to the database and 1 database is not enough because there are too many read / write.
 * So we can increase 15 Read replicas, within AZ, Cross AZ or cross region.
-* So Read replicas have sync with main RDS database engine
+* Read replicas are in sync with main RDS database engine.
 
 **Use Case:**
 
@@ -340,7 +341,7 @@ Relational Databases - A managed service from AWS. AWS provide many features alo
 * 1 Application which is continuesly read & write to the Main databases.
 * SYNC replication.
 * 1 DNS name is assigned to the RDS Instance (Standby) for automatic failover condition.
-* If there is failure of main RDS DB it will automatic make the Standy DB to main DB with the help of DNS.
+* If there is failure of main RDS Database it will automatic make the Standy Database to main Database with the help of DNS.
 * No intervention is required.
 
 ![image](https://github.com/user-attachments/assets/f4ff38ee-77ec-4512-96bb-5834a8db8582)
@@ -359,15 +360,16 @@ Under the hood what happened, when we do this ?
 
 ![image](https://github.com/user-attachments/assets/ee8cf487-40de-4c8d-9a24-be92a35443e2)
 
-Important: Once the RDS is created connect with "SQL Electron" 
 
-Provide Endpoint, DB and Password to the SQL Electron and connect.
+Important: Once the RDS is created connect with "SQL Electron". Provide Endpoint, DB and Password to the SQL Electron and connect.
+
 
 ![image](https://github.com/user-attachments/assets/3fccb3ad-893c-4386-ae6b-6ffe781c90a8)
 
+
 Point in Time Recovery - Restore last backup or any specific custom time backup.
 
-Go to RDS > Automated Backups > Replicated > Restore to point in time > Choose restore time (custom / latest) 
+* Go to RDS > Automated Backups > Replicated > Restore to point in time > Choose restore time (custom / latest) 
 
 ![image](https://github.com/user-attachments/assets/541b3305-f0dd-4202-9863-7b7d06dfbbec)
 
